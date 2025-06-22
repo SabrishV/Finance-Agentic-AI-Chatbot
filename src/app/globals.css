@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* ChatGPT-like Dark Theme (Default) */
+    --background: 240 10% 3.9%; /* Very Dark Grey/Almost Black */
+    --foreground: 0 0% 80%; /* Light Grey Text */
+
+    --card: 240 6% 10%; /* Dark Grey Cards */
+    --card-foreground: 0 0% 85%; /* Light Grey Text on Cards */
+
+    --popover: 240 6% 8%; /* Slightly darker Popover */
+    --popover-foreground: 0 0% 85%;
+
+    --primary: 210 60% 55%; /* A subtle blue for primary actions - can be changed to a grey if preferred */
+    --primary-foreground: 0 0% 98%; /* White text on primary */
+
+    --secondary: 240 4% 18%; /* Medium Dark Grey for secondary elements */
+    --secondary-foreground: 0 0% 90%; /* Lighter Grey for text on secondary */
+
+    --muted: 240 4% 15%; /* Darker Muted Grey */
+    --muted-foreground: 0 0% 55%; /* Softer grey text */
+
+    --accent: 210 50% 65%; /* A lighter, muted blue for accents - can be changed to a grey */
+    --accent-foreground: 0 0% 98%; /* White text on accent */
+
+    --destructive: 0 60% 50%; /* A standard red for destructive actions */
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 240 4% 20%; /* Dark border */
+    --input: 240 4% 16%; /* Dark input background */
+    --ring: 210 60% 65%; /* Ring color, matching accent or primary */
+
+    --radius: 0.5rem;
+
+    /* Sidebar specific theme variables (Dark on Dark) */
+    --sidebar-background: 240 7% 7%; /* Very Dark Sidebar */
+    --sidebar-foreground: 0 0% 75%; /* Slightly dimmed text for sidebar */
+    --sidebar-primary: 210 60% 50%; /* Sidebar primary accent (e.g., active item) */
+    --sidebar-primary-foreground: 0 0% 95%;
+    --sidebar-accent: 240 4% 12%; /* Hover/active state for sidebar items */
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 240 4% 10%;
+    --sidebar-ring: 210 60% 55%;
+
+    --chart-1: 210 70% 60%;
+    --chart-2: 170 60% 50%;
+    --chart-3: 30 70% 60%;
+    --chart-4: 280 60% 65%;
+    --chart-5: 340 70% 60%;
+  }
+
+  .dark {
+    /* Ensure .dark class mirrors the default dark theme or can be customized further if needed */
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 80%;
+    --card: 240 6% 10%;
+    --card-foreground: 0 0% 85%;
+    --popover: 240 6% 8%;
+    --popover-foreground: 0 0% 85%;
+    
+    --primary: 210 60% 55%;
+    --primary-foreground: 0 0% 98%;
+    
+    --secondary: 240 4% 18%;
+    --secondary-foreground: 0 0% 90%;
+    
+    --muted: 240 4% 15%;
+    --muted-foreground: 0 0% 55%;
+    
+    --accent: 210 50% 65%;
+    --accent-foreground: 0 0% 98%;
+    
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 240 4% 20%;
+    --input: 240 4% 16%;
+    --ring: 210 60% 65%;
+
+    --sidebar-background: 240 7% 7%;
+    --sidebar-foreground: 0 0% 75%;
+    --sidebar-primary: 210 60% 50%;
+    --sidebar-primary-foreground: 0 0% 95%;
+    --sidebar-accent: 240 4% 12%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 240 4% 10%;
+    --sidebar-ring: 210 60% 55%;
+
+    --chart-1: 210 70% 60%;
+    --chart-2: 170 60% 50%;
+    --chart-3: 30 70% 60%;
+    --chart-4: 280 60% 65%;
+    --chart-5: 340 70% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
