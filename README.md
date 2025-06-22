@@ -1,6 +1,7 @@
 # Finance-Agentic-AI-Chatbot
-Conversational Finance Agentic AI Chatbot 
-Agent = Sage Advisor
+Conversational Finance Agentic AI Chatbot
+
+The Agent = Sage Advisor
 ## Overview
 Sage Advisor is a sophisticated AI-powered financial assistant that simulates a financial sage with a millennium of experience. The application provides personalized financial guidance through a conversational interface, leveraging Google's Gemini 2.0 Flash AI model.
 
